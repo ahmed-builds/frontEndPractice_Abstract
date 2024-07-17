@@ -1,0 +1,204 @@
+@import url(https://db.onlinewebfonts.com/c/031da03967812d134ed68febd3ba78a9?family=GT+America+Regular);
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --blue: #4c5fd5;
+    --lightBlue: #DADBF1;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "GT America Regular";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    padding: 1rem;
+}
+.header_container {
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+}
+.headerLink {
+    color: var(--white);
+}
+.section_help {
+    background-color: var(--lightBlue);
+}
+.left_nav {
+    display: flex;
+    color: var(--white);
+    font-size: 2rem;
+    gap: 15px;
+}
+.logo {
+    width: 150px;
+}
+.headerHelp {
+    font-size: 2rem;
+}
+.right_nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.submitRequest {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.signIn {
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.signIn:hover {
+    background: var(--white);
+    border: 1px solid var(--white);
+    color: var(--black);
+    transition: 0.3s all ease-in-out;
+}
+.helpHero {
+    padding: 3rem 2rem;
+    background-color: var(--lightBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_container {
+    width: 85vw;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.hero_container > h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+.hero_container > input {
+    border: 0.5px solid var(--black);
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 50%;
+    padding: 1rem;
+}
+.hero_container > input:focus-visible, input:focus{
+    border: 0.5px solid var(--blue);
+    outline: none;
+    transition: 0.3s all ease-in-out;
+}
+.icon {
+    position: absolute;
+    margin-left: -2rem;
+    margin-top: 1.2rem;
+}
+.main_content {
+    width: 80vw;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 20px;
+}
+.content_box {
+    display: flex;
+    gap: 25px;
+}
+.content_box > .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.4rem;
+}
+.content_img > img {
+    height: 90px;
+    max-height: 150px;
+}
+.content_title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 1rem 0rem;
+    margin: 0;
+}
+.contentLearnMore {
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+footer {
+    background-color: var(--black);
+    line-height: 1.5rem;
+    padding-bottom: 60px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+.footer_container {
+    width: 85vw;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+}
+.footer_menu > a {
+    color: var(--white);
+    display: block;
+}
+.footer_menu > a:hover {
+    text-decoration: underline;
+}
+.footer_title {
+    display: block;
+    width: 100%;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.copyright {
+    margin-top: 11rem;
+}
+.copyright > svg {
+    width: 180px;
+    margin-bottom: 0.5rem;
+}
+.copyright > p {
+    padding: 0rem;
+    margin: 0.2rem 0;
+    line-height: 1.5rem;
+}
+.helpButton {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    border: 0rem;
+    background: var(--blue);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
